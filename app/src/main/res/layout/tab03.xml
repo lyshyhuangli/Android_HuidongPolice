@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:background="#1D82EA"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:text="警情统计"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/weekStatic"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/week"
+            android:drawablePadding="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="警情周统计报告"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/monthStatic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/month"
+            android:drawablePadding="10dip"
+            android:minHeight="10dp"
+            android:minWidth="15dp"
+            android:background="@android:color/transparent"
+            android:text="警情月统计报告"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/quarterStatic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/quarter"
+            android:drawablePadding="10dip"
+            android:minHeight="10dp"
+            android:background="@android:color/transparent"
+            android:minWidth="15dp"
+            android:text="警情季度统计报告"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/yearStatic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/year"
+            android:drawablePadding="10dip"
+            android:minHeight="10dp"
+            android:minWidth="15dp"
+            android:background="@android:color/transparent"
+            android:text="警情年统计报告"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/meeting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/meeting"
+            android:drawablePadding="10dip"
+            android:minHeight="10dp"
+            android:minWidth="15dp"
+            android:background="@android:color/transparent"
+            android:text="专项研判"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/files"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dip"
+            android:drawableTop="@mipmap/files"
+            android:minHeight="10dp"
+            android:background="@android:color/transparent"
+            android:minWidth="15dp"
+            android:text="文件资料"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</LinearLayout>

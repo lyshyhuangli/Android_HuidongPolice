@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:background="#1D82EA"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:onClick="tobackStatic"
+            android:drawableLeft="@mipmap/back"
+            android:paddingLeft="10dip"
+            android:text="警情统计详情"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchStaticFiles"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:iconifiedByDefault="false"
+            android:queryHint="请输入文件名称">
+        </SearchView>
+
+        <ProgressBar
+            android:id="@+id/progressFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/tvName"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- ListView控件 -->
+    <ListView
+        android:id="@+id/staticFilesLv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+    <TextView
+        android:id="@+id/processTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+</LinearLayout>

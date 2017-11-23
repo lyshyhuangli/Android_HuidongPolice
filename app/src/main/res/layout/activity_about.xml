@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/setting"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/setting"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:background="#1D82EA"
+            android:gravity="center"
+            android:text="关于"
+            android:drawableLeft="@mipmap/back"
+            android:paddingLeft="10dip"
+            android:onClick="aboutdBack"
+            android:textColor="@color/white"
+            android:textSize="22dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="600px"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="500px"
+            android:id="@+id/aboutjinghui"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/jinghui"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutjinghui"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="惠东县公安局移动警务研判系统"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/settingbtn"
+            android:gravity="center_vertical|left"
+            android:text="版本号"
+            android:paddingLeft="10dip"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/settingbtn"
+            android:gravity="center_vertical|right"
+            android:text="V1.0"
+            android:paddingRight="10dip"
+            android:textColor="@color/buttontxt"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

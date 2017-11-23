@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnewstatic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:background="#1D82EA"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:drawableRight="@mipmap/newstatic"
+            android:paddingRight="10dip"
+            android:text="最新警情"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
+        <!-- ListView控件 -->
+        <ListView
+            android:id="@+id/mainListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

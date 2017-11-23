@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_weight="0.5"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <!-- 警情简要 -->
+        <TextView
+            android:id="@+id/brieflyTab2"
+            android:layout_width="280dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxEms="30"
+            android:textColor="@color/txtcolor"
+            android:layout_weight="0.5"
+            />
+        <ImageView
+            android:id="@+id/brieflyType"
+            android:layout_weight="0.5"
+            android:layout_toRightOf="@id/brieflyTab2"
+            android:layout_height="95px"
+            android:layout_width="8px"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTab1"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <!-- 警情性质 -->
+        <TextView
+            android:id="@+id/comformXingZhiTab2"
+            android:layout_width="220dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            />
+
+        <!-- 报案时间 -->
+        <TextView
+            android:id="@+id/alarmDateTab2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/comformXingZhiTab2"
+            android:layout_weight="0.5"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/idData"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/imageTab3"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fileType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTab3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/staticFilesName"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:textColor="@color/txtcolor"
+            />
+
+        <TextView
+            android:id="@+id/fileTime"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            />
+
+        <TextView
+            android:id="@+id/idStaticFile"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/staticFilsUrl"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e3e3e3"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/tab_weixin_pressed"/>
+
+            <TextView
+                android:id="@+id/nameShow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:minHeight="15dp"
+                android:minWidth="15dp"
+                android:text=""
+                android:textSize="40sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/tab_weixin_pressed"/>
+
+            <Button
+                android:id="@+id/modifyPwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="10dp"
+                android:minWidth="15dp"
+                android:gravity="center_vertical"
+                android:textSize="25sp"
+                android:drawablePadding="10dip"
+                android:background="@drawable/buttonstyle"
+                android:text="修改密码"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle"
+                android:text="关于"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:background="@drawable/buttonstyle"
+                android:text="退出"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

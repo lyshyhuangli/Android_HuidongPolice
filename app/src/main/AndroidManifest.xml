@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.huizhou.huidongpolice">
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".startApp.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".startApp.WelcomeGuideActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"/>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".afterLogin.AfterLogin"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".afterLogin.ActivityJingInfoDetail"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".afterLogin.ActivityModifyPwd"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".afterLogin.ActivitySearchMoreFloat"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity
+            android:name=".afterLogin.ActivityCalendarPickerView"
+            android:theme="@style/Theme.Transparent.float">
+        </activity>
+        <activity
+            android:name=".afterLogin.ActivityMainPage"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".afterLogin.ActivityStaticFilesList"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".afterLogin.ActivityStaticFileShow"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".afterLogin.checkbox.ActivityComformXingzhiCheckbox"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity
+            android:name=".afterLogin.checkbox.ActivityAlarmCompanycheckbox"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity
+            android:name=".afterLogin.ActivityNewStatic"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".afterLogin.ActivityAbout"
+                  android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.huizhou.huidongpolice.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
