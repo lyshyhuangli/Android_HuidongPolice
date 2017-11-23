@@ -12,7 +12,7 @@ public interface ServerConfig
 
     public final static String  RESTFUL_API_IP = "202.96.142.210";
 
-    public final static String  RESTFUL_API_PORT = "8081";
+    public final static String  RESTFUL_API_PORT = "80812";
 
     public final static String FILE_SAVE_PATH ="sdcard/Download/huidongpolice/";
 }
